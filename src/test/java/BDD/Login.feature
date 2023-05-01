@@ -27,7 +27,7 @@ Feature: Login
     And I input "87654321" on field Masukkan Password
     And I click button Lanjut
     Then Fail to login
-    Then Error mesage Password Anda salah. Silahkan coba lagi
+    Then Error message Password Anda salah. Silahkan coba lagi
 
   @LoginDifferentAccountInOneDevice
   Scenario: Login Different Account In One Device

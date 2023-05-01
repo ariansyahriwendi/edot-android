@@ -1,10 +1,13 @@
 package TestStep;
 
+import BaseClass.BaseSetUp;
 import BaseClass.BaseStep;
 import io.cucumber.java.en.And;
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
+
+import static io.appium.java_client.remote.MobileCapabilityType.NO_RESET;
 
 public class LoginStep extends BaseStep {
 
@@ -18,27 +21,33 @@ public class LoginStep extends BaseStep {
 
     @Given("Account not logged in")
     public void accountNotLoggedIn() {
+        BaseSetUp.reset();
     }
 
     @When("I click button Masuk")
     public void iClickButtonMasuk() {
+        login.setMasuk();
     }
 
     @And("I input {string} on field Nomor HP atau No. kartu member")
-    public void iInputOnFieldNomorHPNoKartuMember(String arg0) {
+    public void iInputOnFieldNomorHPNoKartuMember(String x) {
+        login.setNomorHP(x);
     }
 
     @And("I input {string} on field Masukkan Password")
-    public void iInputOnFieldMasukkanPassword(String arg0) {
+    public void iInputOnFieldMasukkanPassword(String x) {
+        login.setPassword(x);
     }
 
     @And("I click button Lanjut")
     public void iClickButtonLanjut() {
+        login.setLanjut();
     }
 
     @Then("Success to login")
     public void successToLogin() throws InterruptedException {
         Thread.sleep(2000);
+        login.setWelcomeLogin();
     }
 
     @Then("Open to beranda page")
@@ -49,8 +58,8 @@ public class LoginStep extends BaseStep {
     public void failToLogin() {
     }
 
-    @Then("Error mesage Password Anda salah. Silahkan coba lagi")
-    public void errorMesagePasswordAndaSalahSilahkanCobaLagi() {
+    @Then("Error message Password Anda salah. Silahkan coba lagi")
+    public void errorMessagePasswordAndaSalahSilahkanCobaLagi() {
     }
 
     @Given("Device connected with account 081806442929")
