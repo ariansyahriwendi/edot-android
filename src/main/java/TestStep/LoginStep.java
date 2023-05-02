@@ -60,29 +60,35 @@ public class LoginStep extends BaseStep {
 
     @Then("Error message Password Anda salah. Silahkan coba lagi")
     public void errorMessagePasswordAndaSalahSilahkanCobaLagi() {
+        login.setErrorPasswordSalah();
     }
 
     @Given("Device connected with account 081806442929")
     public void deviceConnectedWithAccount081806442929() {
     }
 
-    @Then("Pop up error message Login Gagal, Maaf device ini sudah terhubung dengan Id:xxx, No:xxx, dan No Hp:{int}xxxxx{int}. Mohon hubungi Sahabat Alfamart")
-    public void popUpErrorMessageLoginGagalMaafDeviceIniSudahTerhubungDenganIdXxxNoXxxDanNoHpXxxxxMohonHubungiSahabatAlfamart(int arg0, int arg1) {
+    @Then("Pop up error message Login Gagal, Maaf device ini sudah terhubung dengan Id:xxx, No:xxx, dan No Hp:0818xxxxx929. Mohon hubungi Sahabat Alfamart")
+    public void popUpErrorMessageLoginGagalMaafDeviceIniSudahTerhubungDenganIdXxxNoXxxDanNoHp0818xxxxx929MohonHubungiSahabatAlfamart() {
+        login.setErrorDeviceTerhubung();
     }
 
     @Then("Error message Nomor HP atau No. kartu Member tidak boleh kosong")
     public void errorMessageNomorHPAtauNoKartuMemberTidakBolehKosong() {
+        login.setErrorPhoneNumber();
     }
 
     @Then("Error message Kolom ini diperlukan")
     public void errorMessageKolomIniDiperlukan() {
+        login.setErrorPassword();
     }
 
     @Then("Error message Password minimum delapan karakter")
     public void errorMessagePasswordMinimumDelapanKarakter() {
+        login.setErrorPassword();
     }
 
     @And("I click icon visible password")
     public void iClickIconVisiblePassword() {
+        login.setVisiblePassword();
     }
 }

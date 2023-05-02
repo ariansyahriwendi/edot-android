@@ -25,7 +25,7 @@ public class Login extends BaseSetUp {
         click(lanjut);
     }
 
-    private final By visiblePassword = new By.ById("");
+    private final By visiblePassword = new By.ById("imgPassword");
     public void setVisiblePassword() {
         click(visiblePassword);
     }
@@ -34,5 +34,27 @@ public class Login extends BaseSetUp {
     public void setWelcomeLogin() {
         displayed(welcomeLogin);
     }
+
+    private final By errorPasswordSalah = new By.ById("tvPasswordError");
+    public void setErrorPasswordSalah() {
+        displayed(errorPasswordSalah);
+    }
+
+    private final By errorDeviceTerhubung = new By.ById("txtTitle");
+    public void setErrorDeviceTerhubung() {
+        displayed(errorDeviceTerhubung);
+    }
+
+    private final By errorPhoneNumber = new By.ById("tvPhoneNumberError");
+    public void setErrorPhoneNumber() {
+        displayed(errorPhoneNumber);
+    }
+
+    private final By errorPassword = new By.ById("tvPasswordError");
+    public void setErrorPassword() {
+        displayed(errorPassword);
+    }
+
+
 
 }

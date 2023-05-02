@@ -24,8 +24,7 @@ public class BaseSetUp {
             caps.setCapability(APP_PACKAGE, "com.alfamart.alfagift");
             caps.setCapability(APP_ACTIVITY, "com.alfamart.alfagift.screen.splash.SplashActivity");
             caps.setCapability(NO_RESET, true);
-            caps.setCapability("autoGrantPermissions", true);
-
+            caps.setCapability(AUTO_GRANT_PERMISSIONS, true);
 
         URL url = new URL("http://localhost:4723/wd/hub");
             driver = new AndroidDriver<>(url, caps);

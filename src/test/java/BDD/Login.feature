@@ -11,7 +11,7 @@ Feature: Login
     Given Account not logged in
     When I click button Masuk
     And I input "081806442929" on field Nomor HP atau No. kartu member
-    And I input "12345678" on field Masukkan Password
+    And I input "vengeance005" on field Masukkan Password
 #   sorry fake password because it's a real account
     And I click button Lanjut
     Then Success to login
@@ -83,7 +83,7 @@ Feature: Login
     Given Account not logged in
     When I click button Masuk
     And I input "081806442929" on field Nomor HP atau No. kartu member
-    And I input "12345678" on field Masukkan Password
+    And I input "vengeance005" on field Masukkan Password
     And I click icon visible password
     And I click button Lanjut
     Then Success to login
