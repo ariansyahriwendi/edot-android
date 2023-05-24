@@ -21,8 +21,8 @@ public class BaseSetUp {
             DesiredCapabilities caps = new DesiredCapabilities();
             caps.setCapability(PLATFORM_NAME, "Android");
             caps.setCapability(DEVICE_NAME, "RR8M50B5JNA");
-            caps.setCapability(APP_PACKAGE, "com.alfamart.alfagift");
-            caps.setCapability(APP_ACTIVITY, "com.alfamart.alfagift.screen.splash.SplashActivity");
+            caps.setCapability(APP_PACKAGE, "com.pmaapp.ehashtag");
+            caps.setCapability(APP_ACTIVITY, "com.pmaapp.ehashtag.MainActivity");
             caps.setCapability(NO_RESET, true);
             caps.setCapability(AUTO_GRANT_PERMISSIONS, true);
 

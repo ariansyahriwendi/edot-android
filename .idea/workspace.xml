@@ -5,8 +5,13 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="30e74c52-9e23-40b6-a3fb-c81e4c5b02be" name="Changes" comment="Alfa Login">
+      <change afterPath="$PROJECT_DIR$/src/main/java/Object/Register.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/TestStep/RegisterStep.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/BDD/Register.feature" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/BaseClass/BaseSetUp.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/BaseClass/BaseSetUp.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/BaseClass/BaseStep.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/BaseClass/BaseStep.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/Object/Login.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Object/Login.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/TestStep/LoginStep.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/TestStep/LoginStep.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/BDD/Login.feature" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/BDD/Login.feature" afterDir="false" />
@@ -19,8 +24,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Class" />
         <option value="AnnotationType" />
+        <option value="Class" />
       </list>
     </option>
   </component>
@@ -62,13 +67,13 @@
       <recent name="$PROJECT_DIR$" />
     </key>
   </component>
-  <component name="RunManager" selected="Cucumber Java.Feature: Login">
+  <component name="RunManager" selected="Cucumber Java.Scenario: Success To Login">
     <configuration name="Feature: Login" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" temporary="true" nameIsGenerated="true">
       <option name="CUCUMBER_CORE_VERSION" value="5" />
       <option name="FILE_PATH" value="$PROJECT_DIR$/src/test/java/BDD/Login.feature" />
       <option name="GLUE" value="TestStep" />
       <option name="MAIN_CLASS_NAME" value="io.cucumber.core.cli.Main" />
-      <module name="alfagift-android" />
+      <module name="edot-android" />
       <option name="PROGRAM_PARAMETERS" value=" --plugin org.jetbrains.plugins.cucumber.java.run.CucumberJvm5SMFormatter" />
       <option name="SUGGESTED_NAME" value="Feature: Login" />
       <option name="WORKING_DIRECTORY" value="$MODULE_WORKING_DIR$" />
@@ -87,7 +92,7 @@
       <option name="FILE_PATH" value="$PROJECT_DIR$/src/test/java/BDD/Register.feature" />
       <option name="GLUE" value="TestStep" />
       <option name="MAIN_CLASS_NAME" value="io.cucumber.core.cli.Main" />
-      <module name="alfagift-android" />
+      <module name="edot-android" />
       <option name="PROGRAM_PARAMETERS" value=" --plugin org.jetbrains.plugins.cucumber.java.run.CucumberJvm5SMFormatter" />
       <option name="SUGGESTED_NAME" value="Feature: Register" />
       <option name="WORKING_DIRECTORY" value="$MODULE_WORKING_DIR$" />
@@ -106,30 +111,10 @@
       <option name="FILE_PATH" value="$PROJECT_DIR$/src/test/java/BDD/Login.feature" />
       <option name="GLUE" value="TestStep" />
       <option name="MAIN_CLASS_NAME" value="io.cucumber.core.cli.Main" />
-      <module name="alfagift-android" />
+      <module name="edot-android" />
       <option name="NAME_FILTER" value="^Success To Login$" />
       <option name="PROGRAM_PARAMETERS" value=" --plugin org.jetbrains.plugins.cucumber.java.run.CucumberJvm5SMFormatter --name &quot;^Success To Login$&quot;" />
       <option name="SUGGESTED_NAME" value="Scenario: Success To Login" />
-      <option name="WORKING_DIRECTORY" value="$MODULE_WORKING_DIR$" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="io.cucumber.core.cli.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="Scenario: Success To Register And Login" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" temporary="true" nameIsGenerated="true">
-      <option name="CUCUMBER_CORE_VERSION" value="5" />
-      <option name="FILE_PATH" value="$PROJECT_DIR$/src/test/java/BDD/Register.feature" />
-      <option name="GLUE" value="TestStep" />
-      <option name="MAIN_CLASS_NAME" value="io.cucumber.core.cli.Main" />
-      <module name="alfagift-android" />
-      <option name="NAME_FILTER" value="^Success To Register And Login$" />
-      <option name="PROGRAM_PARAMETERS" value=" --plugin org.jetbrains.plugins.cucumber.java.run.CucumberJvm5SMFormatter --name &quot;^Success To Register And Login$&quot;" />
-      <option name="SUGGESTED_NAME" value="Scenario: Success To Register And Login" />
       <option name="WORKING_DIRECTORY" value="$MODULE_WORKING_DIR$" />
       <extension name="coverage">
         <pattern>
@@ -146,7 +131,7 @@
       <option name="FILE_PATH" value="$PROJECT_DIR$/src/test/java/BDD/Register.feature" />
       <option name="GLUE" value="TestStep" />
       <option name="MAIN_CLASS_NAME" value="io.cucumber.core.cli.Main" />
-      <module name="alfagift-android" />
+      <module name="edot-android" />
       <option name="NAME_FILTER" value="^Success To Register$" />
       <option name="PROGRAM_PARAMETERS" value=" --plugin org.jetbrains.plugins.cucumber.java.run.CucumberJvm5SMFormatter --name &quot;^Success To Register$&quot;" />
       <option name="SUGGESTED_NAME" value="Scenario: Success To Register" />
@@ -161,13 +146,28 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="TestRunner" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="edot-android" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="BaseClass.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="BaseClass" />
+      <option name="MAIN_CLASS_NAME" value="BaseClass.TestRunner" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Cucumber Java.Feature: Login" />
         <item itemvalue="Cucumber Java.Scenario: Success To Login" />
+        <item itemvalue="JUnit.TestRunner" />
+        <item itemvalue="Cucumber Java.Feature: Login" />
         <item itemvalue="Cucumber Java.Scenario: Success To Register" />
         <item itemvalue="Cucumber Java.Feature: Register" />
-        <item itemvalue="Cucumber Java.Scenario: Success To Register And Login" />
       </list>
     </recent_temporary>
   </component>
